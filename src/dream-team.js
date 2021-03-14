@@ -11,7 +11,7 @@ module.exports = function createDreamTeam(members) {
     }
   }
   if (array.length == 0) {
-    throw new CustomError('Not implemented');
+    return false;
   }
   alert(array.sort().join());
 

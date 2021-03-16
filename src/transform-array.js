@@ -13,9 +13,7 @@ module.exports = function transform(arr) {
     }
     else {
       if (arr[i] == "--discard-next" && arr[i + 1] != undefined) {
-
         i++;
-
       }
       if (arr[i] == "--discard-prev" && arr[i - 1] != undefined && arr[i - 2] != "--discard-next") {
         mas.splice(k - 1, 1);
